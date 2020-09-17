@@ -6,7 +6,7 @@
     <!--google font-->
     <!--prettier-ignore-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"/>
     <!--bootstrap 4.5-->
     <!--prettier-ignore-->
@@ -15,184 +15,315 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"/>
-    <title>Influencers Connect Registration</title>
+    <title>HSIC Conference</title>
     <style>
       body {
         margin: 0;
         padding: 0;
         font-family: "Montserrat", sans-serif;
-        background-color: orange;
+        background-color: #e5e5e5;
+        overflow-x: hidden;
       }
 
       .header {
-        height: 30vh;
-        width: 100%;
-        background-image: url("web-header.jpg");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-color: orange;
+        border-radius: 15em/2em;
+        box-shadow: 10px 0px 10px 5px rgba(115, 115, 115, 0.1);
+        padding: 120px 0 60px 0;
+        margin-top: -80px;
       }
 
-      .bordered {
-        box-shadow: 2px 2px 10px 5px rgba(115, 115, 115, 0.1);
-        border-radius: 5px;
+      .head {
+        font-size: 1em;
       }
 
-      .fa-x {
+      .w-p {
+        font-size: 0.8em;
+      }
+
+      .w-xp {
         font-size: 0.7em;
-        color: #080808;
+      }
+
+      .logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+        background-color: #8b1b89;
+        color: #ffffff;
       }
 
       .btn-purple {
         background-color: #8b1b89;
         color: #ffffff;
-        font-weight: bold;
+        margin-top: 3em;
+        padding: 0.5em 1em;
       }
 
-      .btn-purple:hover {
+      .btn-purple-form {
+        background-color: #8b1b89;
+        color: #ffffff;
+      }
+
+      .btn-orange {
+        background-color: orange;
+        color: #ffffff;
+      }
+
+      .btn-orange:hover {
+        color: orange;
+        background-color: #ffffff;
+      }
+
+      .btn-purple:hover,
+      .btn-purple-form:hover {
         color: #8b1b89;
         background-color: #ffffff;
       }
 
+      .circle {
+        background-color: #8b1b89;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+      }
+
       @media screen and (min-width: 640px) {
-        .fa-x {
+        .head {
+          font-size: 1.5em;
+        }
+
+        .w-p {
           font-size: 1em;
         }
 
-        .header {
-          background-size: 100% 100%;
-          height: 60vh;
-          background-position: left;
+        .logo {
+          width: 250px;
+          height: 250px;
+        }
+
+        .btn-purple {
+          margin-top: 7em;
+          padding: 0.6em 1.1em;
+        }
+      }
+      @media screen and (min-width: 960px) {
+        .logo {
+          width: 350px;
+          height: 350px;
+        }
+
+        .head {
+          font-size: 2.5em;
+        }
+
+        .w-p {
+          font-size: 1.5em;
+        }
+
+        .w-xp {
+          font-size: 1em;
+        }
+
+        .btn-purple {
+          margin-top: 7em;
+          padding: 0.6em 1.1em;
+          font-size: 1.5em;
         }
       }
     </style>
   </head>
   <body>
-    <div class="header"></div>
-    <div id="content" class="container">
-      <div class="row my-3 my-sm-5">
-        <div class="col-md-6 offset-md-3">
-          <form action="">
-            <div class="bordered p-3">
+    <div class="header">
+      <div class="container">
+        <h1 class="text-left text-uppercase font-weight-bold mb-3 head">
+          hsic conference
+        </h1>
+        <div class="d-flex justify-content-between">
+          <div>
+            <p class="text-left w-p">
+              The High School INFLUENCERS CONNECT Conference
+            </p>
+            <!--prettier-ignore-->
+            <button
+              class="btn btn-purple"
+              data-toggle="modal"
+              data-target="#formModal">
+              Register
+            </button>
+          </div>
+          <div
+            class="logo d-flex px-3 px-md-5 justify-content-center align-items-center"
+          >
+            <h1 class="font-weight-bold text-uppercase head">
+              the next big thing
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main mt-3">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="d-flex flex-column align-items-center">
+            <div class="circle"></div>
+            <!--prettier-ignore-->
+            <button
+              class="btn btn-orange mt-2 px-md-3 py-md-2"
+              data-toggle="modal"
+              data-target="#formModal">
+              Register
+            </button>
+            <p class="w-xp text-uppercase mt-2">influencers connect</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="circle"></div>
+            <button class="btn btn-orange mt-2 px-md-3 py-md-2">
+              Register
+            </button>
+            <p class="w-xp text-uppercase mt-2">healing service</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="circle"></div>
+            <button class="btn btn-orange mt-2 px-md-3 py-md-2">
+              Register
+            </button>
+            <p class="w-xp text-uppercase mt-2">download</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--form-->
+    <div
+      class="modal fade"
+      id="formModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form action="">
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="first-name"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    first name
-                </label>
+                    for="first-name"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      first name
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  class="form-control"/>
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    class="form-control"/>
                 </div>
               </div>
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="last-name"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    last name
-                </label>
+                    for="last-name"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      last name
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  class="form-control"/>
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    class="form-control"/>
                 </div>
               </div>
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="phone-number"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    phone number
-                </label>
+                    for="phone-number"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      phone number
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="tel"
-                  name="phone-number"
-                  id="phone-number"
-                  class="form-control"/>
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    class="form-control"/>
                 </div>
               </div>
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="email"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    email
-                </label>
+                    for="email"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      email
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="form-control"/>
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"/>
                 </div>
               </div>
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="address"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    address
-                </label>
+                    for="address"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      address
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="text"
-                  name="address"
-                  id="address"
-                  class="form-control"/>
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="form-control"/>
                 </div>
               </div>
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="church"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    church
-                </label>
+                    for="church"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      church
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="text"
-                  name="church"
-                  id="church"
-                  class="form-control"/>
+                    type="text"
+                    name="church"
+                    id="church"
+                    class="form-control"/>
                 </div>
               </div>
               <div class="form-group row">
                 <!--prettier-ignore-->
                 <label
-                  for="group"
-                  class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
-                    group
-                </label>
+                    for="group"
+                    class="fa-x col-3 col-form-label text-uppercase font-weight-bold">
+                      group
+                  </label>
                 <div class="col-9">
                   <!--prettier-ignore-->
                   <input
-                  type="text"
-                  name="group"
-                  id="group"
-                  class="form-control"/>
+                    type="text"
+                    name="group"
+                    id="group"
+                    class="form-control"/>
                 </div>
               </div>
-            </div>
-            <div class="form-group d-flex justify-content-end my-3">
-              <button type="submit" class="btn btn-purple px-3">
-                Register
-              </button>
-            </div>
-          </form>
+              <div class="form-group d-flex justify-content-end my-3">
+                <button type="submit" class="btn btn-purple-form px-3">
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
