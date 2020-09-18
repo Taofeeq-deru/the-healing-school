@@ -47,6 +47,10 @@
         font-size: 0.7em;
       }
 
+      .w-sp {
+        font-size: 1.5em;
+      }
+
       .orange {
         color: orange;
       }
@@ -69,8 +73,13 @@
 
       .logo .head {
         color: rgb(14, 14, 119);
-        font-weight: 900;
         font-size: 1.2em;
+        font-weight: 900;
+      }
+
+      #next {
+        font-weight: 900;
+        font-size: larger;
       }
 
       .btn-register {
@@ -108,8 +117,8 @@
 
       @media screen and (min-width: 340px) {
         .logo {
-          width: 270px;
-          height: 180px;
+          width: 300px;
+          height: 200px;
         }
 
         .logo .head {
@@ -119,8 +128,8 @@
 
       @media screen and (min-width: 424px) {
         .logo {
-          width: 300px;
-          height: 200px;
+          width: 350px;
+          height: 250px;
         }
 
         .logo .head {
@@ -138,8 +147,8 @@
         }
 
         .logo {
-          width: 350px;
-          height: 300px;
+          width: 400px;
+          height: 380px;
         }
 
         .logo .head {
@@ -153,12 +162,16 @@
       }
       @media screen and (min-width: 960px) {
         .logo {
-          width: 350px;
-          height: 350px;
+          width: 400px;
+          height: 390px;
         }
 
         .logo .head {
           font-size: 3.1em;
+        }
+
+        #next {
+          font-size: larger;
         }
 
         .head {
@@ -193,7 +206,7 @@
         <div class="d-flex justify-content-between">
           <div>
             <p class="text-left w-p">
-              The High School
+              The Healing School
               <span class="orange">INFLUENCERS CONNECT</span> CONFERENCE
             </p>
             <!--prettier-ignore-->
@@ -202,10 +215,12 @@
             </button>
           </div>
           <div
-            class="logo d-flex px-3 px-md-5 justify-content-center align-items-center"
+            class="logo d-flex px-4 px-sm-5 px-md-5 justify-content-center align-items-center"
           >
-            <h1 class="font-weight-bold head">
-              The <span class="orange">NEXT</span> Big thing
+            <h1 class="head">
+              The <br />
+              <span class="orange" id="next">NEXT</span> <br />
+              Big thing
             </h1>
           </div>
         </div>
@@ -378,6 +393,7 @@
             </form>
           </div>
           <div class="col-x align-self-center my-3">
+            <h1 class="w-sp text-center text-capitalize my-2">create avatar</h1>
             <img src="avatar.jpg" alt="avatar" class="avatar" />
           </div>
         </div>
