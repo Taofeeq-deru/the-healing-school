@@ -6,7 +6,7 @@
     <!--google font-->
     <!--prettier-ignore-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Delius&display=swap"
       rel="stylesheet"/>
     <!--bootstrap 4.5-->
     <!--prettier-ignore-->
@@ -113,6 +113,21 @@
         border-radius: 100%;
         width: 50px;
         height: 50px;
+      }
+
+      .counter {
+        background: rgb(14, 14, 119);
+        color: #ffffff;
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+      }
+
+      .w-lp {
+        font-size: 3.5em;
+        font-weight: bold;
+        color: orange;
+        font-family: "Delius", cursive;
       }
 
       @media screen and (min-width: 340px) {
@@ -255,15 +270,22 @@
           </div>
         </div> -->
         <div class="d-flex flex-row flex-wrap justify-content-around">
-          <p class="w-xp col-x align-self-center my-3">
-            The objective of the Healing School Influencer connect conference is
-            a strategic conference aimed at getting everyone connected to the
-            vision of the healing school <br />
-            <br />
-            To inspire in the brethen a growing commitment to increase
-            constantly in levels of greatness in their financial commitment to
-            the Healing ministry of our man of God, Pastor Chris
-          </p>
+          <div class="align-self-center my-3">
+            <p class="w-xp col-x">
+              The objective of the Healing School Influencer connect conference
+              is a strategic conference aimed at getting everyone connected to
+              the vision of the healing school <br />
+              <br />
+              To inspire in the brethen a growing commitment to increase
+              constantly in levels of greatness in their financial commitment to
+              the Healing ministry of our man of God, Pastor Chris
+            </p>
+            <!--prettier-ignore-->
+            <div class="counter d-flex flex-column justify-content-center align-items-center mx-auto">
+              <p class="w-lp">300</p>
+              <p class="w-xp">Registered Attendees</p>
+            </div>
+          </div>
           <div class="form col-x my-3">
             <form action="" class="">
               <div class="form-group row">
@@ -385,6 +407,57 @@
                     placeholder="Group"/>
                 </div>
               </div>
+              <div class="form-group row">
+                <!--prettier-ignore-->
+                <label
+                    for="business-name"
+                    class="w-xp sr-only text-uppercase">
+                      do you have a business?
+                  </label>
+                <div class="col-12">
+                  <!--prettier-ignore-->
+                  <select name="business" id="business" class="form-control">
+                    <option value="">Do you have a business?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+              </div>
+              <p class="w-xp">If yes,</p>
+              <div class="form-group row">
+                <!--prettier-ignore-->
+                <label
+                    for="business-name"
+                    class="w-xp sr-only text-uppercase">
+                      business name
+                  </label>
+                <div class="col-12">
+                  <!--prettier-ignore-->
+                  <input
+                    type="text"
+                    name="business-name"
+                    id="business-name"
+                    class="form-control"
+                    placeholder="Business Name"/>
+                </div>
+              </div>
+              <div class="form-group row">
+                <!--prettier-ignore-->
+                <label
+                    for="business-address"
+                    class="w-xp sr-only text-uppercase">
+                      business address
+                  </label>
+                <div class="col-12">
+                  <!--prettier-ignore-->
+                  <input
+                    type="text"
+                    name="business-address"
+                    id="business-address"
+                    class="form-control"
+                    placeholder="Business Address"/>
+                </div>
+              </div>
               <div class="form-group d-flex justify-content-end my-3">
                 <button type="submit" class="btn btn-submit px-3">
                   Register
@@ -394,7 +467,7 @@
           </div>
           <div class="col-x align-self-center my-3">
             <h1 class="w-sp text-center text-capitalize my-2">create avatar</h1>
-            <a href="crop.html">
+            <a href="https://enterthehealingschool.org/hsicc/avatar">
               <img src="avatar.jpg" alt="avatar" class="avatar" />
             </a>
           </div>
